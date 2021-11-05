@@ -11,9 +11,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print("TELA CARREGADA")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("TELA VAI APARECER")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("TELA APARECEU")
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        print("TELA VAI DESAPARECER")
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        print("TELA DESAPARECEU")
+    }
 
 }
 
